@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ПП</title>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Лабораторная работа №1 — Вариант 21</h1>
+
+    <div class="card">
+      <h2>Входные данные (JSON)</h2>
+
+      <label class="btn secondary btn-upload">
+        Загрузить JSON
+        <input
+          type="file"
+          id="jsonFileInput"
+          accept=".json"
+          style="display: none"
+        />
+      </label>
+
+      <textarea id="inputJsonPreview" rows="15" cols="80">
+JSON не загружен</textarea
+      >
+    </div>
+
+    <div class="card">
+      <h2>Алгоритм планирования</h2>
+      <label for="algorithm">Выберите алгоритм:</label>
+      <select id="algorithm" name="algorithm">
+        <option value="2">MLQ (относительный приоритет)</option>
+        <option value="1">LCFS (nonpreemptive)</option>
+      </select>
+    </div>
+
+    <div class="card">
+      <h2>Управление</h2>
+      <button class="btn primary" id="runBtn">Run</button>
+      <button class="btn" id="saveOutputBtn">Save output.txt</button>
+      <span id="status">Готово</span>
+    </div>
+
+    <div class="card output-card">
+      <h2>Выходные данные (txt)</h2>
+      <pre id="output">Нажмите Run для запуска...</pre>
+    </div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
