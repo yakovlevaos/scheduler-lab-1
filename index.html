@@ -7,7 +7,6 @@
     <script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
     <h1>Лабораторная работа №1 — Вариант 21</h1>
 
@@ -32,7 +31,7 @@ JSON не загружен</textarea
       <label for="algorithm">Выберите алгоритм:</label>
       <select id="algorithm" name="algorithm">
         <option value="2">MLQ (относительный приоритет)</option>
-        <option value="1">LCFS (nonpreemptive)</option>
+        <option value="1">LCFS (non-preemptive)</option>
       </select>
     </div>
 
@@ -40,13 +39,13 @@ JSON не загружен</textarea
       <h2>Управление</h2>
       <button class="btn primary" id="runBtn">Запуск</button>
       <button class="btn" id="saveOutputBtn">
-        Сохранить данные в формате output.txt
+        Сохранить данные в output.txt
       </button>
       <span id="status">Готово</span>
     </div>
 
     <div class="card output-card">
-      <h2>Выходные данные (txt)</h2>
+      <h2>Выходные данные</h2>
       <pre id="output">Нажмите "Запуск" для запуска...</pre>
     </div>
 
